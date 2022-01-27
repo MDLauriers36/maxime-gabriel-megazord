@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
 :root {
     --yellow: #F0BB3C;
     --orange: #E96938;
     --turquoise: #0B7B6F;
     --dark-turquoise: #07443D;
     --dark-grey: #2E241A;
+    --fira-font-family: 'Fira Sans', sans-serif;
+    --sedgwick-font-family: 'Sedgwick Ave', cursive;
 }
-@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&family=Metal+Mania&display=swap');
+
+
