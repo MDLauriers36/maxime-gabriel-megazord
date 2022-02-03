@@ -1,1 +1,12 @@
-@import url("main.css")
+@import url("main.css");
+
+.hero{
+    width: 50%;
+    height: 50%;
+}
+picture.image_hero{
+    height: 30px;
+
+}
+
+
