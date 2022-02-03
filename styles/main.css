@@ -11,14 +11,18 @@
     --sedgwick: 'Sedgwick Ave', cursive;
 }
 
-.title-1 {
-    font-size: ;
+body {
+    font-size: 18px;
 }
 
-.title-2 {
-    font-size: ;
+h1, .title-1 {
+    font-size: 24px;
 }
 
-.title-3 {
-    font-size: ;
+h2, .title-2 {
+    font-size: 22px;
+}
+
+h3, .title-3 {
+    font-size: 20px;
 }
