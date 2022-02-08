@@ -1,12 +1,39 @@
 @import url("main.css");
 
 .hero{
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: auto;
+   
 }
-picture.image_hero{
-    height: 30px;
+.image_hero{
+    width: 100%;
+    height: auto;
+
 
 }
 
 
+
+.picture_hero{
+    object-fit: fill;
+}
+
+@media (orientation: landscape){
+    #image2{
+        display: none;
+    }
+    #image1{
+        display: block;
+    }
+    .hero{
+        width: 56.25%;
+    }
+}
+@media (orientation: portrait){
+    #image1{
+        display: none;
+    }
+    #image2{
+        display: block;
+    }
+}
