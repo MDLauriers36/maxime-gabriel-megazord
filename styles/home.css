@@ -37,7 +37,7 @@ html{
     background-color: blue;
     display: block;
     position: absolute;
-    opacity: 20%;
+    opacity: 25%;
     z-index: 1;
     pointer-events: none
     
@@ -66,7 +66,7 @@ html{
 h1{
     position: relative;
     text-align: center;
-    font-family: --sedgwick;
+    font-family: var(--sedgwick);
     top: 1em;
     font-size: 3em;
 }
@@ -83,6 +83,11 @@ h1{
     margin: auto;
     top: 8em;
     background-color: transparent;
+    color: var(--dark-grey);
+    
+    
+   
+   
     
     
 
@@ -112,11 +117,7 @@ h1{
         text-align: center;
     }
     h1{
-        position: relative;
-        text-align: center;
-        font-family: --fira;
-        top: 1em;
-        font-size: 3em;
+        
         color: white;
     }
 }
