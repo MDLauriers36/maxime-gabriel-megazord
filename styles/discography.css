@@ -87,7 +87,7 @@ source, .albumCover {
 
 footer {
     background-color: var(--turquoise);
-    padding: 25px;
+    padding: 35px;
     margin-top: 20px;
     font-family: var(--fira);
     font-weight: bold;
@@ -101,4 +101,8 @@ footer {
 
 .lienGit:hover {
     color: var(--yellow);
+}
+
+aside {
+    position: relative;
 }
