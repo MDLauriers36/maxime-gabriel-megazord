@@ -63,6 +63,9 @@ source, .albumCover {
     background-color: var(--orange);
     font-family: var(--fira);
     border: none;
+    padding: 5px;
+    text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 .btn-primary:hover {
@@ -105,4 +108,8 @@ footer {
 
 aside {
     position: relative;
+}
+
+.animation {
+    width: 100%;
 }
