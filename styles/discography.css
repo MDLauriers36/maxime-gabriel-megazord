@@ -89,4 +89,16 @@ footer {
     background-color: var(--turquoise);
     padding: 25px;
     margin-top: 20px;
+    font-family: var(--fira);
+    font-weight: bold;
+    position: relative;
+}
+
+.lienGit {
+    text-decoration: none;
+    color: black;
+}
+
+.lienGit:hover {
+    color: var(--yellow);
 }
