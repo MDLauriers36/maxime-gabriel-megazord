@@ -95,6 +95,7 @@ footer {
     font-family: var(--fira);
     font-weight: bold;
     position: relative;
+    bottom: 0;
 }
 
 .lienGit {
