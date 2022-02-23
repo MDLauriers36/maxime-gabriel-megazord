@@ -121,12 +121,15 @@ h1 {
 .courant {
     background-color: rgb(145, 145, 145);
     border-radius: 5px;
-    padding: 0 10%;
+    
 
+}
+.nav-item{
+    padding: 0% 10%;
 }
 
 .logo {
-    padding-left: 1vw;
+    position: relative;
     height: 46px;
 
 }
@@ -136,8 +139,9 @@ h1 {
     margin: 0px 5px;
 
 }
-
-.card-img-top {}
+.card-img-top{
+    width: 100%;
+}
 
 @media (orientation: landscape) {
     #image2 {
