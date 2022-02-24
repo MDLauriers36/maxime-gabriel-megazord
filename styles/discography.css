@@ -136,3 +136,8 @@ aside {
     font-family: var(--fira);
     margin-top: 20px;
 }
+
+.esp_album {
+    border-radius: 25px;
+    padding: 10px 15px;
+}
