@@ -148,6 +148,9 @@ footer{
     padding-top: 20px;
     width: 100%;
 }
+section{
+    width: 100%;
+}
 .url{
     text-decoration: none;
     color:darkred;
@@ -160,6 +163,13 @@ footer{
     justify-content: flex-end;
 }
 .animation {
+    width: 100%;
+}
+.navbar-brand{
+    margin-left:2vw;
+}
+#savoir-plus{
+    justify-content: center;
     width: 100%;
 }
 
