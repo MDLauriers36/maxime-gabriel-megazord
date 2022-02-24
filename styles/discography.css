@@ -117,10 +117,17 @@ aside {
 }
 
 .album {
+    position: relative;
+    width: 100%;
+    height: 100vh;
     margin: 20px 0px;
 }
 
-.iridescent {
+.iridescent, .wteb, .ews, .tngs {
     width: 100%;
     margin-top: 20px;
+}
+
+.album-title {
+    font-family: var(--sedgwick);
 }
