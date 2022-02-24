@@ -142,6 +142,26 @@ h1 {
 .card-img-top{
     width: 100%;
 }
+footer{
+    background-color: blueviolet;
+    margin: 10px 0px;
+    padding-top: 20px;
+    width: 100%;
+}
+.url{
+    text-decoration: none;
+    color:darkred;
+
+}
+.url:hover{
+    color: azure;
+}
+.coming-soon{
+    justify-content: flex-end;
+}
+.animation {
+    width: 100%;
+}
 
 @media (orientation: landscape) {
     #image2 {
