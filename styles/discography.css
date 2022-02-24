@@ -94,8 +94,9 @@ footer {
     margin-top: 20px;
     font-family: var(--fira);
     font-weight: bold;
-    position: relative;
+    position: absolute;
     bottom: 0;
+    width: 100vw;
 }
 
 .lienGit {
@@ -116,5 +117,27 @@ aside {
 }
 
 .album {
+    position: relative;
+    width: 100%;
+    height: 100vh;
     margin: 20px 0px;
+}
+
+.iridescent, .wteb, .ews, .tngs {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.album-title {
+    font-family: var(--sedgwick);
+}
+
+.album-tracks {
+    font-family: var(--fira);
+    margin-top: 20px;
+}
+
+.esp_album {
+    border-radius: 25px;
+    padding: 10px 15px;
 }
