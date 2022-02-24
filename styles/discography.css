@@ -131,3 +131,8 @@ aside {
 .album-title {
     font-family: var(--sedgwick);
 }
+
+.album-tracks {
+    font-family: var(--fira);
+    margin-top: 20px;
+}
