@@ -172,7 +172,29 @@ section{
     justify-content: center;
     width: 100%;
 }
+.video{
+    position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+    
+}
+iframe{
+    position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.credit{
+    transition: 0.3s;
+}
+.credit:hover  {
+    font-size: 115%;
 
+}
 @media (orientation: landscape) {
     #image2 {
         display: block;
