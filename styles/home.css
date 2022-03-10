@@ -173,6 +173,10 @@ section{
     width: 100%;
 }
 
+.carousel-item{
+    
+}
+
 @media (orientation: landscape) {
     #image2 {
         display: block;
