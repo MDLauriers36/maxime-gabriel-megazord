@@ -226,8 +226,8 @@ iframe{
 
   .swiper-slide img {
     display: block;
-    width: 100%;
-    height: 100%;
+    height: 56.25%;
+    
     object-fit: cover;
   }
 @media (orientation: landscape) {
