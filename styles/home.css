@@ -227,8 +227,13 @@ iframe{
   .swiper-slide img {
     display: block;
     height: 56.25%;
-    
     object-fit: cover;
+  }
+
+  #img01{
+      width: 300px;
+      height: 300px;
+      margin: auto;
   }
 @media (orientation: landscape) {
     #image2 {
