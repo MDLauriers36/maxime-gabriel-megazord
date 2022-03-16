@@ -1,13 +1,14 @@
 @import url("main.css");
 
 .hero_discographie {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
 }
 
 @media (orientation:landscape) {
     .hero_discographie {
-        height: 56.25%;
+        height: 56.25vw;
     }
 }
 
@@ -18,7 +19,7 @@ picture {
     background-color: var(--dark-turquoise);
 }
 
-source, img {
+source, .albumCover {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -57,9 +58,86 @@ source, img {
     max-width: 90%;
 }
 
-.esp_button {
+.btn-primary {
     color: var(--dark-grey);
     background-color: var(--orange);
     font-family: var(--fira);
     border: none;
+    padding: 5px;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+.btn-primary:hover {
+    color: var(--dark-grey);
+    background-color: var(--yellow);
+}
+
+.navbar {
+    background-color: black;
+    width: 100vw;
+    padding: 40px 20px;
+    font-family: var(--sedgwick);
+}
+
+.nav-item {
+    padding-top: 8px;
+}
+
+.logo {
+    height: 45px;
+}
+
+footer {
+    background-color: var(--turquoise);
+    padding: 35px;
+    margin-top: 20px;
+    font-family: var(--fira);
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+
+.lienGit {
+    text-decoration: none;
+    color: black;
+}
+
+.lienGit:hover {
+    color: var(--yellow);
+}
+
+aside {
+    position: relative;
+}
+
+.animation {
+    width: 100%;
+}
+
+.album {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 20px 0px;
+}
+
+.iridescent, .wteb, .ews, .tngs {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.album-title {
+    font-family: var(--sedgwick);
+}
+
+.album-tracks {
+    font-family: var(--fira);
+    margin-top: 20px;
+}
+
+.esp_album {
+    border-radius: 25px;
+    padding: 10px 15px;
 }
