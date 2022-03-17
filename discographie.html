@@ -12,17 +12,29 @@
 </head>
 <body>
     <section class="hero_discographie">
-        <picture>
-            <source srcset="img/hero_discographie_ews.jpg" media="(min-width: 1000px)">
-            <img src="img/hero_discographie_tngs.jpg" class="albumCover">
-        </picture>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="imgSwiper" src="img/iridescent-sp.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img class="imgSwiper" src="img/wteb-sp.jpg">   
+              </div>
+              <div class="swiper-slide">
+                <img class="imgSwiper" src="img/ews-sp.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img class="imgSwiper" src="img/tngs-sp.jpg">
+              </div>
+            </div>
+        </div>
         <div class="degrade_contraste"></div>
         <div class="container">
             <div class="row justify-content-start align-items-end">
-                <div class="col-12 col-sm-8">
+                <div class="band col-12 col-sm-8">
                     <h1 class="title-1">Discographie</h1>
                     <p class="description">Silent Planet a sorti 4 albums studio depuis sa formation en 2009.</p>
-                    <a href="#main" class="esp_button btn-primary" role="button">En savoir plus...</a>
+                    <a href="#main" class="esp_button btn btn-primary" role="button">En savoir plus...</a>
                 </div>
             </div>
         </div>
@@ -133,14 +145,14 @@
                                 <a href="https://en.wikipedia.org/wiki/Everything_Was_Sound" class="esp_album btn-primary" role="button" target="_blank">En savoir plus...</a>
                             </div>
                             <div class="col-12 col-sm-7 mt-sm-0">
-                                <img src="img/hero_discographie_ews.jpg" alt="Everything Was Sound" class="ews">
+                                <img src="img/ews-sp.jpg" alt="Everything Was Sound" class="ews">
                             </div>
                         </div>
                     </section>
                     <section class="album album-tngs">
                         <div class="row">
                             <div class="col-12 col-sm-7 mt-sm-0">
-                                <img src="img/hero_discographie_tngs.jpg" alt="The Night God Slept" class="tngs">
+                                <img src="img/tngs-sp.jpg" alt="The Night God Slept" class="tngs">
                             </div>
                             <div class="col-12 col-sm-5">
                                 <h3 class="album-title">The Night God Slept</h2>
@@ -177,7 +189,7 @@
                 <div class="col-12 col-lg-6 text-lg-left">
                     <div class="membresCredits" data-bs-toggle="modal" data-bs-target="#modal1">Maxime Des Lauriers</div>
                     <div class="modal fade" id="modal1" tabindex="-1">
-                        <div class="modal-dialog">
+                        <div class="modal-dialog modal-dialog-centered">
                           <div class="modal-content">
                             <div class="modal-header">
                               <h3 class="modal-title">Maxime Des Lauriers</h3>
@@ -191,7 +203,7 @@
                       </div>
                     <div class="membresCredits" data-bs-toggle="modal" data-bs-target="#modal2">Gabriel Leblanc</div>
                     <div class="modal fade" id="modal2" tabindex="-1">
-                        <div class="modal-dialog">
+                        <div class="modal-dialog modal-dialog-centered">
                           <div class="modal-content">
                             <div class="modal-header">
                               <h3 class="modal-title">Gabriel Leblanc</h3>
@@ -211,6 +223,9 @@
             </div>
         </div>
     </footer>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="scripts/discography.js"></script>
 </body>
 </html>
 
