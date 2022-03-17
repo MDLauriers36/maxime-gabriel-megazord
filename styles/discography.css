@@ -75,7 +75,7 @@ source, .albumCover {
 .navbar {
     background-color: black;
     width: 100vw;
-    padding: 40px 20px;
+    padding: 10px 20px;
     font-family: var(--sedgwick);
 }
 
@@ -99,6 +99,7 @@ footer {
 
 .lienGit {
     text-decoration: none;
+    font-size: 18px;
     color: black;
 }
 
@@ -161,6 +162,11 @@ iframe {
 }
 
 .modal {
-    margin-top: 50vh;
+    height: 100vh;
+    margin: auto;
+}
+
+.imgModal {
+    width: 300px;
 }
 
