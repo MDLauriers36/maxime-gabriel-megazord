@@ -166,15 +166,15 @@
             <!-- Swiper -->
             <div class="swiper mySwiper">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="img/promo1.png" alt=""></div>
-                <div class="swiper-slide"><img src="img/promo2.png" alt=""></div>
-                <div class="swiper-slide"><img src="img/promo3.png" alt=""></div>
-                <div class="swiper-slide"><img src="img/promo4.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/ad1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/ad2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/ad3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/ad4.jpg" alt=""></div>
                 
               </div>
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
-              
+              <div class="swiper-pagination swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"></div>
             </div>
 
     </section>
@@ -183,9 +183,11 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-12 col-lg-6 text-lg-left">
-                    <button type="button" class="btn btn-primary credit" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">Maxime Des Lauriers</button>
-                    <p>Gabriel Leblanc</p>
+                    <p type="button" class="btn btn-primary credit" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Maxime Des Lauriers</p>
+                </br>
+                        <p type="button" class="btn btn-primary credit" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal2">Gabriel Leblanc</p>
                     <p>Xavier Cloutier</p>
                 </div>
 
@@ -203,7 +205,26 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <img src="img/Alex Camarena.jpg" class="modal-content" id="img01">
+                                <img src="img/Maxime Des Lauriers.jpg" class="modal-content" id="img01">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Gabriel Leblanc</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="img/gabriel_leblanc.jpg" class="modal-content" id="img01">
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
@@ -230,6 +251,7 @@
           pagination: {
             el: ".swiper-pagination",
             type: "fraction",
+            dynamicBullets: true,
           },
           navigation: {
             nextEl: ".swiper-button-next",
