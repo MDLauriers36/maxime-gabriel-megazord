@@ -120,13 +120,6 @@ h2{
     width: 100%;
 
 }
-
-.courant {
-    background-color: var(--dark-grey);
-    border-radius: 5px;
-    
-
-}
 .nav-item{
     font-family: var(--sedgwick);
     padding: 0% 10%;
