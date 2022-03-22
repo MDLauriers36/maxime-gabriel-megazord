@@ -2,6 +2,12 @@
 @import 'swiper/css';
 html {
     height: 100%;
+    width: 100vw;
+    
+   
+    
+
+    
 }
 
 .hero {
@@ -11,6 +17,13 @@ html {
     position: relative;
 
 
+
+}
+.normal{
+    width: 100vw;
+    
+    overflow: hidden;
+    position: relative;
 
 }
 
@@ -104,6 +117,8 @@ h2{
     top: 5em;
     z-index: 10;
     color: black;
+    width: 50%;
+    margin: auto;
 }
 
 #myBtn {
