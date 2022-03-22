@@ -250,6 +250,9 @@ iframe{
       
       margin: auto;
   }
+  #membre{
+      margin: 10px 0px;
+  }
 @media (orientation: landscape) {
     #image2 {
         display: block;
