@@ -137,6 +137,7 @@ h2{
 }
 .nav-item{
     font-family: var(--sedgwick);
+    padding-top: 8px;
 }
 
 .logo {
