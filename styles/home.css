@@ -192,6 +192,12 @@ iframe{
   width: 100%;
   height: 100%;
 }
+.btn{
+    border: none;
+}
+.btn-primary{
+    border: none;
+}
 .credit{
     background-color: var( --orange);
     transition: 0.3s;
