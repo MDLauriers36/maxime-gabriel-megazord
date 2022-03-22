@@ -193,9 +193,11 @@ iframe{
   height: 100%;
 }
 .credit{
+    background-color: var( --orange);
     transition: 0.3s;
 }
 .credit:hover  {
+    background-color: var( --orange);
     font-size: 100%;
 
 }
