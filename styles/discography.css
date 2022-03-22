@@ -145,6 +145,7 @@ aside {
 .titreVideo {
     font-family: var(--sedgwick);
     margin-left: 30px;
+    text-align: center;
 }
 
 .aspectRatioIframe {

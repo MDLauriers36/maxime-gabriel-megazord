@@ -6,6 +6,10 @@ html {
 
 }
 
+.nomBand {
+    padding-top: 20px;
+}
+
 .hero {
     width: 100vw;
     height: 100vh;
