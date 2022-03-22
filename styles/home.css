@@ -146,7 +146,7 @@ h2{
     width: 100%;
 }
 footer{
-    background-color: blueviolet;
+    background-color: var(--turquoise);
     margin: 10px 0px;
     padding-top: 20px;
     width: 100%;
