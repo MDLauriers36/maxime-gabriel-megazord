@@ -3,11 +3,7 @@
 html {
     height: 100%;
     width: 100vw;
-    
-   
-    
 
-    
 }
 
 .hero {
@@ -15,13 +11,9 @@ html {
     height: 100vh;
     overflow: hidden;
     position: relative;
-
-
-
 }
 .normal{
     width: 100vw;
-    
     overflow: hidden;
     position: relative;
 
