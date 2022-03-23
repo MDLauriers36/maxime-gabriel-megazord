@@ -126,6 +126,8 @@ h2{
     top: 8em;
     background-color: transparent;
     color: var(--dark-grey);
+    font-family: var(--fira);
+    font-weight: bold;
 }
 
 .navbar {
