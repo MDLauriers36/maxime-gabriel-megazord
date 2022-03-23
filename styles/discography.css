@@ -12,18 +12,8 @@
     }
 }
 
-picture {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: var(--dark-turquoise);
-}
-
-source, .albumCover {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+.esp_button {
+    font-weight: bolder;
 }
 
 .degrade_contraste {
