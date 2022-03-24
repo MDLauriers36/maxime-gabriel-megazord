@@ -131,8 +131,8 @@ h2{
 
 .navbar {
     background-color: black;
-    width: 100%;
-
+    width: 100vw;
+    padding: 10px 20px;
 }
 .nav-item{
     font-family: var(--sedgwick);
@@ -140,8 +140,7 @@ h2{
 }
 
 .logo {
-    position: relative;
-    height: 46px;
+    height: 45px;
 
 }
 
@@ -175,9 +174,6 @@ section{
 }
 .animation {
     width: 100%;
-}
-.navbar-brand{
-    margin-left:2vw;
 }
 #savoir-plus{
     justify-content: center;
