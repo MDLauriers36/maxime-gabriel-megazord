@@ -3,3 +3,5 @@ let swiper = new Swiper(".swiper", {
     effect: 'fade',
     autoplay: { delay: 2000, },
 });
+
+gsap.registerPlugin(ScrollTrigger);
