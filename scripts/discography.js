@@ -10,11 +10,10 @@ gsap.registerPlugin(ScrollTrigger);
         duration: 2,
         scrollTrigger: {
           markers: true,
-          start: 'top 75%',
-          end: 'bottom 25%',
+          start: 'center',
           toggleActions: 'restart complete reverse reset',
           trigger: '.no2',
         },
       })
-        .to('.element.no2', { x: '100%' })
+        .from('.element.no2', { x: '-100%' })
           
