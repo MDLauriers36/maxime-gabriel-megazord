@@ -6,49 +6,15 @@ let swiper = new Swiper(".swiper", {
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.timeline()
-    .to('.no2', {
-        scrollTrigger: {
-            markers: true,
-            start: 'center 75%',
-            trigger: '.no2',
-        },
-        x: '100%',
+    gsap.timeline({
         duration: 2,
-    })
-    .to('.no2', {
         scrollTrigger: {
-            markers: true,
-            start: 'center 75%',
-            trigger: '.no2',
+          markers: true,
+          start: 'top 75%',
+          end: 'bottom 25%',
+          toggleActions: 'restart complete reverse reset',
+          trigger: '.no2',
         },
-        x: '100%',
-        duration: 2,
-    })
-    .to('.no2', {
-        scrollTrigger: {
-            markers: true,
-            start: 'center 75%',
-            trigger: '.no2',
-        },
-        x: '100%',
-        duration: 2,
-    })
-    .to('.no2', {
-        scrollTrigger: {
-            markers: true,
-            start: 'center 75%',
-            trigger: '.no2',
-        },
-        x: '100%',
-        duration: 2,
-    })
-    .to('.no2', {
-        scrollTrigger: {
-            markers: true,
-            start: 'center 75%',
-            trigger: '.no2',
-        },
-        x: '100%',
-        duration: 2,
-    })
+      })
+        .to('.element.no2', { x: '100%' })
+          
