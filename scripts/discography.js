@@ -12,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
           start: 'top 75%',
           end: 'bottom 10%',
           toggleActions: 'restart reset play reset',
-          trigger: '.album-iridescent',
+          trigger: 'section',
         },
       })
         .from('.iridescent', { x: '110%' })
