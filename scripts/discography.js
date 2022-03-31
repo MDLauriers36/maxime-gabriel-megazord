@@ -9,8 +9,8 @@ gsap.registerPlugin(ScrollTrigger);
     gsap.timeline({
         scrollTrigger: {
           markers: true,
-          start: 'top 25%',
-          end: 'bottom 15%',
+          start: 'top 75%',
+          end: 'bottom 10%',
           toggleActions: 'restart reset play reset',
           trigger: '.album-iridescent',
         },
