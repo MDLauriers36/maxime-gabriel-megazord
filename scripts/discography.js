@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
           markers: true,
           start: 'top 75%',
           end: 'bottom 10%',
-          toggleActions: 'restart reset play reset',
+          toggleActions: 'restart reset play',
           trigger: 'section',
         },
       })
