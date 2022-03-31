@@ -7,13 +7,14 @@ let swiper = new Swiper(".swiper", {
 gsap.registerPlugin(ScrollTrigger);
 
     gsap.timeline({
-        duration: 2,
         scrollTrigger: {
           markers: true,
-          start: 'center',
-          toggleActions: 'restart complete reverse reset',
-          trigger: '.no2',
+          start: 'top 25%',
+          end: 'bottom 15%',
+          toggleActions: 'restart reset play reset',
+          trigger: '.album-iridescent',
         },
       })
-        .from('.element.no2', { x: '-100%' })
-          
+        .from('.iridescent', { x: '110%' })
+        .from('.iridescentDetails', { x: '-155%' }, '<' )
+        
