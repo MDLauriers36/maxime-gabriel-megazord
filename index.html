@@ -14,7 +14,8 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
 
-    <script src="scripts/home.js"></script>
+    
+    
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/home.css">
 
@@ -70,7 +71,7 @@
         </div>
     </nav>
 
-    <section>
+    <section class="trigger_1">
         <aside>
             <div class="container-fluid">
                 <div class="row coming-soon">
@@ -81,7 +82,7 @@
             </div>
         </aside>
         <div class="col-md-9 d-md-block">
-            <div class="container">
+            <div class="container membre">
                 <h1 id="membre">Membres du groupe</h1>
                 <div class="row justify-content-center">
                     <div class="col-12 col-xl-6">
@@ -148,18 +149,19 @@
             </div>
         </div>
 
-        <section class="clip">
-            <h1>Vidéo</h1>
-            <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/BYYF1-Hv_tU"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-        </section>
+        
+    </section>
+    <section class="clip">
+        <h1>Vidéo</h1>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BYYF1-Hv_tU"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
     </section>
 
-    <section>
+    <section class="promotion">
         <h2>Images promotionnelles</h2>
 
         <body>
@@ -243,6 +245,10 @@
     </footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/ScrollTrigger.min.js"></script>
+
+    <script src="scripts/home.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
             pagination: {
