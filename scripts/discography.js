@@ -10,7 +10,6 @@ gsap.registerPlugin(ScrollTrigger);
     sections.forEach( function(section) {
         let tl = gsap.timeline({
             scrollTrigger: {
-                marker: true,
                 trigger: section,
                 start: 'top 50%',
                 end: 'bottom 10%',
@@ -27,7 +26,6 @@ gsap.registerPlugin(ScrollTrigger);
     detailsDroite.forEach( function(detailDroit) {
         let tl = gsap.timeline({
             scrollTrigger: {
-                marker: true,
                 trigger: detailDroit,
                 start: 'top 50%',
                 end: 'bottom 10%',
@@ -41,7 +39,6 @@ gsap.registerPlugin(ScrollTrigger);
     detailsGauche.forEach( function(detailGauche) {
         let tl = gsap.timeline({
             scrollTrigger: {
-                marker: true,
                 trigger: detailGauche,
                 start: 'top 50%',
                 end: 'bottom 10%',
