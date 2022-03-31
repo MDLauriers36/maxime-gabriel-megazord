@@ -6,7 +6,7 @@ let tl = gsap.timeline({
     scrollTrigger: {
         trigger: '.trigger_1',
         start: "top 60%",
-        end: "bottom 50%",
+        end: "top 30%",
         toggleActions: "play none none reverse",
         
         
