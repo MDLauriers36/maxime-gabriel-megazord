@@ -53,3 +53,5 @@ let tl = gsap.timeline({
     tl2.fromTo('.hero', { opacity: '0%', scale:0.10}, {opacity: '100%', scale:1, duration: 0.5,});
     tl3.fromTo('.clip', {opacity: 0, rotation: 90, scale:0.10}, {opacity: 1, rotation: 0,scale:1, duration: 0.5,});
     tl4.fromTo('.promotion', {opacity: '0%', scale:0.10}, {opacity: '100%', scale:1});
+
+    
