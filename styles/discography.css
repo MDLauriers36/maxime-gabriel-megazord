@@ -165,3 +165,7 @@ iframe {
     height: 100%;
     background-color: var(--dark-turquoise);
 }
+
+.spritesheet {
+    background: url('img/idle-planete'), url('img/idle-scroll-up'), url('img/idle-scroll-down');
+}
