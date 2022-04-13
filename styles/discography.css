@@ -167,5 +167,5 @@ iframe {
 }
 
 .spritesheet {
-    background: url('img/idle-planete'), url('img/idle-scroll-up'), url('img/idle-scroll-down');
+    background-image: url('img/idle-planete'), url('img/idle-scroll-up'), url('img/idle-scroll-down');
 }
