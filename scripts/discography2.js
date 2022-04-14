@@ -26,7 +26,7 @@ let detailsDroite = document.querySelectorAll('.detailsDroite');
 detailsDroite.forEach( function(detailDroit) {
     let tl = gsap.timeline({
         scrollTrigger: {
-            trigger: detailDroit,
+            trigger: '.detailDroit',
             start: 'top 50%',
             end: 'bottom 10%',
             toggleActions: 'restart reset play reverse'
@@ -39,7 +39,7 @@ let detailsGauche = document.querySelectorAll('.detailsGauche');
 detailsGauche.forEach( function(detailGauche) {
     let tl = gsap.timeline({
         scrollTrigger: {
-            trigger: detailGauche,
+            trigger: '.detailGauche',
             start: 'top 50%',
             end: 'bottom 10%',
             toggleActions: 'restart reset play reverse'
@@ -57,13 +57,12 @@ window.addEventListener('scroll', function() {
 	isScrolling = setTimeout(function() {
     spritesheet.classList.remove("scroll-up", "scroll-down");
     spritesheet.classList.add("spritesheet");
-	}, 250);
+	}, 200);
 });
 
 let anim = gsap.timeline({
   scrollTrigger: {
     trigger: '#main',
-    marker: true,
     
     onUpdate: (e) => {
       
