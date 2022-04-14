@@ -259,30 +259,42 @@ h2 {
 
 .animation{
     width: 100%;
+    position: sticky;
 }
 
+.idle .scroll-up .scroll-down {
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    top: 15%;
+    right: 1vw;
+}
 .idle {
     background-image: url(../img/Max\ -\ idle.png);
     background-position: center;
     width: 400px;
     height: 400px;
     animation: spritesheet2 1s steps(24) infinite;
+    position: fixed;
+    
 }
 
 .scroll-up {
     background-image: url(../img/Max\ -\ haut.png);
     background-position: center;
-    width: 100%;
+    width: 400px;
     height: 400px;
     animation: spritesheet 2s steps(48) infinite;
+    position: fixed;
 }
   
 .scroll-down {
     background-image: url(../img/Max\ -\ back.png);
     background-position: center;
-    width: 100%;
+    width: 400px;
     height: 400px;
     animation: spritesheet 2s steps(48) infinite;
+    
 }
 
 @keyframes spritesheet {

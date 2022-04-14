@@ -66,11 +66,17 @@ let tl = gsap.timeline({
           document.querySelector('.animation').classList.remove('scroll-down');
           document.querySelector('.animation').classList.remove('idle');
         } 
-         if (velocity < -1) {
-          document.querySelector('.animation').classList.add('idle');
-          document.querySelector('.animation').classList.remove('scroll-up');
-          document.querySelector('.animation').classList.remove('scroll-down');
-        } 
+        let isScrolling;
+        const animation = document.querySelector('.animation');
+
+window.addEventListener('scroll', function() {
+	window.clearTimeout( isScrolling );
+  
+	isScrolling = setTimeout(function() {
+    animation.classList.remove("scroll-up", "scroll-down");
+    animation.classList.add("idle");
+	}, 250);
+});
           
         
       }
