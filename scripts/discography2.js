@@ -57,12 +57,13 @@ window.addEventListener('scroll', function() {
 	isScrolling = setTimeout(function() {
     spritesheet.classList.remove("scroll-up", "scroll-down");
     spritesheet.classList.add("spritesheet");
-	}, 2000);
+	}, 250);
 });
 
 let anim = gsap.timeline({
   scrollTrigger: {
-    trigger: '.aside-spritesheet',
+    trigger: '#main',
+    marker: true,
     
     onUpdate: (e) => {
       
