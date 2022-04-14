@@ -47,3 +47,35 @@ detailsGauche.forEach( function(detailGauche) {
     });
     tl.from(detailGauche, { x: '-165%' });
 });
+
+const spritesheet = document.querySelector('.spritesheet');
+let isScrolling;
+
+window.addEventListener('scroll', function() {
+	window.clearTimeout( isScrolling );
+  
+	isScrolling = setTimeout(function() {
+    spritesheet.classList.remove("scroll-up", "scroll-down");
+    spritesheet.classList.add("spritesheet");
+	}, 250);
+});
+
+let anim = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.level',
+    
+    onUpdate: (e) => {
+      
+      if(e.progress){
+         if(e.direction==-1){
+          spritesheet.classList.add("scroll-up");
+          spritesheet.classList.remove("spritesheet");
+        }else{
+          spritesheet.classList.add("scroll-down");
+          body.classList.remove("scroll-up");
+        }
+      }
+    }
+  
+  }
+});
