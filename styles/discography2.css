@@ -183,15 +183,15 @@ iframe {
 }
 
 .spritesheet {
-    background-image: url(../img/idle-planete.png);
+    background-image: url(../img/idle-ews.png);
 }
 
 .scroll-up {
-    background-image: url(../img/scroll-up-planete.png);
+    background-image: url(../img/scroll-up-ews.png);
 }
   
 .scroll-down {
-    background-image: url(../img/scroll-down-planete.png);
+    background-image: url(../img/scroll-down-ews.png);
 }
 
 @keyframes animSpritesheet {
