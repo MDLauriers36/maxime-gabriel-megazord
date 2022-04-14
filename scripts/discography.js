@@ -62,7 +62,7 @@ window.addEventListener('scroll', function() {
 
 let anim = gsap.timeline({
   scrollTrigger: {
-    trigger: '.level',
+    trigger: '.aside-spritesheet',
     
     onUpdate: (e) => {
       
