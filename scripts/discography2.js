@@ -57,7 +57,7 @@ window.addEventListener('scroll', function() {
 	isScrolling = setTimeout(function() {
     spritesheet.classList.remove("scroll-up", "scroll-down");
     spritesheet.classList.add("spritesheet");
-	}, 250);
+	}, 2000);
 });
 
 let anim = gsap.timeline({
@@ -70,9 +70,11 @@ let anim = gsap.timeline({
          if(e.direction==-1){
           spritesheet.classList.add("scroll-up");
           spritesheet.classList.remove("spritesheet");
+          spritesheet.classList.remove("scroll-down");
         }else{
           spritesheet.classList.add("scroll-down");
-          body.classList.remove("scroll-up");
+          spritesheet.classList.remove("scroll-up");
+          spritesheet.classList.remove("spritesheet");
         }
       }
     }
