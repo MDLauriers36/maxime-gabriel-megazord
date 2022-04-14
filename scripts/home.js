@@ -54,4 +54,25 @@ let tl = gsap.timeline({
     tl3.fromTo('.clip', {opacity: 0, rotation: 90, scale:0.10}, {opacity: 1, rotation: 0,scale:1, duration: 0.5,});
     tl4.fromTo('.promotion', {opacity: '0%', scale:0.10}, {opacity: '100%', scale:1});
 
-    
+    ScrollTrigger.create({
+      onUpdate: ({progress, direction, isActive}) => {
+        console.log(isActive);
+        if (direction == 1) {
+          document.querySelector('.animation').classList.add('scroll-down');
+          document.querySelector('.animation').classList.remove('idle');
+          document.querySelector('.animation').classList.remove('scroll-up');
+        } if (direction == -1 ) {
+          document.querySelector('.animation').classList.add('scroll-up');
+          document.querySelector('.animation').classList.remove('scroll-down');
+          document.querySelector('.animation').classList.remove('idle');
+        } 
+         if (velocity < -1) {
+          document.querySelector('.animation').classList.add('idle');
+          document.querySelector('.animation').classList.remove('scroll-up');
+          document.querySelector('.animation').classList.remove('scroll-down');
+        } 
+          
+        
+      }
+
+    });

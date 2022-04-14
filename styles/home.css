@@ -172,11 +172,6 @@ section {
     justify-content: flex-end;
 }
 
-.animation {
-    width: 100%;
-    
-}
-
 #savoir-plus {
     justify-content: center;
     width: 100%;
@@ -262,6 +257,42 @@ h2 {
     margin: 10px 0px;
 }
 
+.animation{
+    width: 100%;
+}
+
+.idle {
+    background-image: url(../img/Max\ -\ idle.png);
+    background-position: center;
+    width: 400px;
+    height: 400px;
+    animation: spritesheet2 1s steps(24) infinite;
+}
+
+.scroll-up {
+    background-image: url(../img/Max\ -\ haut.png);
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    animation: spritesheet 2s steps(48) infinite;
+}
+  
+.scroll-down {
+    background-image: url(../img/Max\ -\ back.png);
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    animation: spritesheet 2s steps(48) infinite;
+}
+
+@keyframes spritesheet {
+    from { background-position: 0 0; }
+    to { background-position: 0 -20160px; }
+}
+@keyframes spritesheet2 {
+    from { background-position: 0 0; }
+    to { background-position: 0 -10080px; }
+}
 @media (orientation: landscape) {
     #image2 {
         display: block;
