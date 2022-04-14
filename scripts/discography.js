@@ -48,8 +48,6 @@ detailsGauche.forEach( function(detailGauche) {
     tl.from(detailGauche, { x: '-165%' });
 });
 
-//BREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKKKKKKKKKKKKKKKKKKKKKKKKKK
-
 const spritesheet = document.querySelector('.spritesheet');
 let isScrolling;
 
