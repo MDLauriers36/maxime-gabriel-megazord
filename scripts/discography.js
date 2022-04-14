@@ -47,3 +47,6 @@ detailsGauche.forEach( function(detailGauche) {
     });
     tl.from(detailGauche, { x: '-165%' });
 });
+
+//BREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKKKKKKKKKKKKKKKKKKKKKKKKKK
+
