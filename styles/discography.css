@@ -166,6 +166,35 @@ iframe {
     background-color: var(--dark-turquoise);
 }
 
-.spritesheet {
+.spritesheet-container {
     width: 100%;
+}
+
+.spritesheet {
+    background-image: url(../img/idle-planete.png);
+    background-position: center;
+    width: 400px;
+    height: 400px;
+    animation: spritesheet 2s steps(48) infinite;
+}
+
+.scroll-up {
+    background-image: url(../img/scroll-up-planete.png);
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    animation: spritesheet 2s steps(48) infinite;
+}
+  
+.scroll-down {
+    background-image: url(../img/scroll-down-planete.png);
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    animation: spritesheet 2s steps(48) infinite;
+}
+
+@keyframes spritesheet {
+    from { background-position: 0 0; }
+    to { background-position: 0 -20160px; }
 }
