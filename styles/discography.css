@@ -198,7 +198,3 @@ iframe {
     from { background-position: 0 0; }
     to { background-position: 0 -20160px; }
 }
-
-.aside-spritesheet {
-    border: 5px solid black;
-}
