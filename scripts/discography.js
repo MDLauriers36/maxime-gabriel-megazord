@@ -85,13 +85,13 @@ let anim = gsap.timeline({
 let formSubmit = document.querySelector('.formSubmit');
 let formInputText = document.querySelector('.formInputText')
 
-formSubmit.addEventListener("click", function(e) {
+formSubmit.addEventListener("submit", function(e) {
     e.preventDefault();
     if(formInputText.value != ""){
         console.log(fetch("https://api.lyrics.ovh/v1/" + "silent planet/" + formInputText.value)) 
     }
 })
 
-const newLineToBr = function(str){​​​​​
+const newLineToBr = function(str) {
     return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
- }​​​​​
+}
