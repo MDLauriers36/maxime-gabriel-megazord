@@ -81,3 +81,13 @@ let anim = gsap.timeline({
   
   }
 });
+
+let formSubmit = document.querySelector('.formSubmit');
+let formInputText = document.querySelector('.formInputText')
+
+formSubmit.addEventListener("submit", function() {
+    e.preventDefault();
+    if(formInputText != null){
+        
+    }
+})
