@@ -85,7 +85,7 @@ let anim = gsap.timeline({
 let formSubmit = document.querySelector('.formSubmit');
 let formInputText = document.querySelector('.formInputText')
 
-formSubmit.addEventListener("submit", function(e) {
+formSubmit.addEventListener("click", function(e) {
     e.preventDefault();
     if(formInputText.value != ""){
         fetch("https://api.lyrics.ovh/v1/" + "silent planet/" + formInputText.value);
