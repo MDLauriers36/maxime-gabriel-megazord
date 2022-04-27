@@ -89,6 +89,7 @@ formSubmit.addEventListener("click", function(e) {
     e.preventDefault();
     if(formInputText.value != ""){
         fetch("https://api.lyrics.ovh/v1/" + "silent planet/" + formInputText.value);
+        console.log(fetch("https://api.lyrics.ovh/v1/" + "silent planet/" + formInputText.value));
     }
 })
 
