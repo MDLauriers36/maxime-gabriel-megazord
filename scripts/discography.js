@@ -87,7 +87,11 @@ let formInputText = document.querySelector('.formInputText')
 
 formSubmit.addEventListener("submit", function(e) {
     e.preventDefault();
-    if(formInputText != null){
-        
+    if(formInputText.value != ""){
+        fetch("https://api.lyrics.ovh/v1/" + "silent planet/" + formInputText.value) 
     }
 })
+
+const newLineToBr = function(str){​​​​​
+    return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
+ }​​​​​
