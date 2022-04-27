@@ -85,7 +85,7 @@ let anim = gsap.timeline({
 let formSubmit = document.querySelector('.formSubmit');
 let formInputText = document.querySelector('.formInputText')
 
-formSubmit.addEventListener("submit", function() {
+formSubmit.addEventListener("submit", function(e) {
     e.preventDefault();
     if(formInputText != null){
         
