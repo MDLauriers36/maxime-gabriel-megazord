@@ -82,3 +82,29 @@ window.addEventListener('scroll', function() {
       }
 
     });
+    const newLineToBr = function(str) {
+      return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
+    }
+    let formSubmit = document.querySelector('.formSubmit');
+let formInputText = document.querySelector('.formInputText')
+let paroles = document.querySelector('.paroles');
+
+formSubmit.addEventListener("click", function(e) {
+  console.log('yo');
+    e.preventDefault();
+    if(formInputText.value != ""){
+      try {
+        fetch("https://api.lyrics.ovh/v1/" + "silent planet/" + formInputText.value);
+      } catch(error) {
+        paroles.innerText = "Désolé, les paroles n'ont pu être trouvées. En voici la raison:";
+      } finally {
+        paroles.innerText = newLineToBr;
+      }
+        
+        console.log(fetch("https://api.lyrics.ovh/v1/" + "silent planet/" + formInputText.value));
+      
+        
+      }
+})
+
+console.log(newLineToBr);

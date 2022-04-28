@@ -296,6 +296,10 @@ h2 {
     animation: spritesheet 2s steps(48) infinite;
     
 }
+.paroles_qui_inspirent{
+    margin: auto;
+    text-align: center;
+}
 
 @keyframes spritesheet {
     from { background-position: 0 0; }
