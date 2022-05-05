@@ -184,14 +184,26 @@
                             </div>
                         </div>
                     </section>
+                    <!-- 
+                    
+                    J'AI LAISSÉ UNE BALISE SECTION POUR LA PARTIE PAROLES MÊME SI ELLE DISPARRAIT LORSQUE L'ON DÉFILE TROP DANS LES
+                    PAROLES À CAUSE DU CODE GSAP PLUS HAUT OÙ IL Y A UN FOREACH SUR TOUTES MES SECTIONS AFIN DE LES FAIRE APPARAITRE
+                    ET DISPARRAITRE À PARTIR D'UN CERTAIN POINT, MAIS JE L'AI LAISSÉE, CAR C'ÉTAIT ÉCRIT DANS LES CONSIGNES. J'AURAIS
+                    PU METTRE UN DIV POUR EMPÊCHER QUE LA SECTION DISPARRAÎSSE, MAIS JE NE VOULAIS PAS PERDRE DES POINTS POUR CELA.
+
+                    -->
                     <section class="section-paroles">
                         <h2>Des paroles qui inspirent</h2>
                         <form>
                             <label class="form-label visually-hidden">Titre d'une chanson</label>
                             <br><br>
                             <input class="formInputText" type="text" placeholder="Titre d'une chanson">
+                            <!-- Chanson #1 : Afterdusk --> <!-- Chanson #2 : The Well -->
                             <input class="formSubmit btn btn-secondary" type="submit" value="Rechercher">
                         </form>
+                        <div class="spinner-border loadingSpinner" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
                         <div class="paroles"></div>
                     </section>
                 </main>

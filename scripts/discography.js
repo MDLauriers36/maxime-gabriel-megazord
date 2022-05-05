@@ -84,12 +84,27 @@ let anim = gsap.timeline({
 
 let formSubmit = document.querySelector('.formSubmit');
 let formInputText = document.querySelector('.formInputText')
+let divParoles = document.querySelector('.paroles');
+let loadingSpinner = document.querySelector('.loadingSpinner');
+
+loadingSpinner.style.display = 'none';
 
 formSubmit.addEventListener("click", function(e) {
     e.preventDefault();
+    loadingSpinner.style.display = 'block';
     if(formInputText.value != ""){
-        fetch("https://api.lyrics.ovh/v1/" + "silent planet/" + formInputText.value);
-        console.log(fetch("https://api.lyrics.ovh/v1/" + "silent planet/" + formInputText.value));
+        fetch(`https://api.lyrics.ovh/v1/silent planet/${formInputText.value}`)
+            .then(parolesChanson => parolesChanson.json()) 
+            .then(dataParoles => { 
+                let paroles = newLineToBr(dataParoles.lyrics);
+                loadingSpinner.style.display = 'none';
+                divParoles.innerHTML = `<br><h2> Paroles de: ${formInputText.value} </h2><br> ${paroles}`;
+                console.log(fetch(`https://api.lyrics.ovh/v1/silent planet/${formInputText.value}`));
+            })
+        .catch(error => {
+        loadingSpinner.style.display = 'none';
+        divParoles.innerHTML = `Désolé, les paroles n'ont pu être trouvées. En voici la raison: ${error}`;
+        });
     }
 })
 
@@ -97,10 +112,3 @@ const newLineToBr = function(str) {
     return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
 }
 
-// const promesse = new Promise((resolve, reject) => {
-//     if (respectPromesse === true) {
-//       resolve("Promesse respectée");
-//     } else {
-//       reject("Promesse brisée");
-//     }
-//   });
