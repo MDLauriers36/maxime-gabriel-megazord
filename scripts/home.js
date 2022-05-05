@@ -82,29 +82,35 @@ window.addEventListener('scroll', function() {
       }
 
     });
-    const newLineToBr = function(str) {
-      return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
-    }
+
+    let divParoles = document.querySelector('.paroles');
+    let chargement = document.querySelector('.chargement');
     let formSubmit = document.querySelector('.formSubmit');
-let formInputText = document.querySelector('.formInputText')
-let paroles = document.querySelector('.paroles');
-
-formSubmit.addEventListener("click", function(e) {
-  console.log('yo');
-    e.preventDefault();
-    if(formInputText.value != ""){
-      try {
-        fetch("https://api.lyrics.ovh/v1/" + "silent planet/" + formInputText.value);
-      } catch(error) {
-        paroles.innerText = "Désolé, les paroles n'ont pu être trouvées. En voici la raison:";
-      } finally {
-        paroles.innerText = newLineToBr;
-      }
-        
-        console.log(fetch("https://api.lyrics.ovh/v1/" + "silent planet/" + formInputText.value));
-      
-        
-      }
-})
-
-console.log(newLineToBr);
+    let formInputText = document.querySelector('.formInputText')
+    
+    
+    chargement.style.display = 'none';
+    
+    formSubmit.addEventListener("click", function(e) {
+        e.preventDefault();
+        chargement.style.display = 'block';
+        if(formInputText.value != ""){
+            fetch(`https://api.lyrics.ovh/v1/silent planet/${formInputText.value}`)
+                .then(parolesChanson => parolesChanson.json()) 
+                .then(dataParoles => { 
+                    let paroles = newLineToBr(dataParoles.lyrics);
+                    chargement.style.display = 'none';
+                    divParoles.innerHTML = `<br><h2> Paroles de: ${formInputText.value} </h2><br> ${paroles}`;
+                    console.log(fetch(`https://api.lyrics.ovh/v1/silent planet/${formInputText.value}`));
+                })
+            .catch(error => {
+              chargement.style.display = 'none';
+            divParoles.innerHTML = `Désolé, les paroles n'ont pu être trouvées. En voici la raison: ${error}`;
+            });
+        }
+    })
+    
+    const newLineToBr = function(str) {
+        return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
+    }
+    
