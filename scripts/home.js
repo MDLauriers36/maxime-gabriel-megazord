@@ -49,9 +49,9 @@ let tl = gsap.timeline({
           },
     })
 
-    tl.fromTo('.trigger_1', { opacity: '0%', scaleZ: '5%', rotation:-180,}, {opacity: '100%', scaleZ: '100%', rotation: 0, duration: 1,});
-    tl2.fromTo('.hero', { opacity: '0%', scale:0.10}, {opacity: '100%', scale:1, duration: 0.5,});
-    tl3.fromTo('.clip', {opacity: 0, rotation: 90, scale:0.10}, {opacity: 1, rotation: 0,scale:1, duration: 0.5,});
+    tl.fromTo('.trigger_1', { opacity: '0%', x: -100}, {opacity: '100%', x : 0, duration: 0.6,});
+    tl2.fromTo('.hero', { opacity: 0, scale:0.10}, {opacity: 1, scale:1, duration: 0.5,});
+    tl3.fromTo('.clip', {opacity: 0, scale:0.10}, {opacity: 1, scale:1, duration: 0.5,});
     tl4.fromTo('.promotion', {opacity: '0%', scale:0.10}, {opacity: '100%', scale:1});
 
     ScrollTrigger.create({
