@@ -49,9 +49,9 @@ let tl = gsap.timeline({
           },
     })
 
-    tl.fromTo('.trigger_1', { opacity: '0%', scaleZ: '5%', rotation:-180,}, {opacity: '100%', scaleZ: '100%', rotation: 0, duration: 1,});
-    tl2.fromTo('.hero', { opacity: '0%', scale:0.10}, {opacity: '100%', scale:1, duration: 0.5,});
-    tl3.fromTo('.clip', {opacity: 0, rotation: 90, scale:0.10}, {opacity: 1, rotation: 0,scale:1, duration: 0.5,});
+    tl.fromTo('.trigger_1', { opacity: '0%', x: -100}, {opacity: '100%', x : 0, duration: 0.6,});
+    tl2.fromTo('.hero', { opacity: 0, scale:0.10}, {opacity: 1, scale:1, duration: 0.5,});
+    tl3.fromTo('.clip', {opacity: 0, scale:0.10}, {opacity: 1, scale:1, duration: 0.5,});
     tl4.fromTo('.promotion', {opacity: '0%', scale:0.10}, {opacity: '100%', scale:1});
 
     ScrollTrigger.create({
@@ -82,3 +82,35 @@ window.addEventListener('scroll', function() {
       }
 
     });
+
+    let divParoles = document.querySelector('.paroles');
+    let chargement = document.querySelector('.chargement');
+    let formSubmit = document.querySelector('.formSubmit');
+    let formInputText = document.querySelector('.formInputText')
+    
+    
+    chargement.style.display = 'none';
+    
+    formSubmit.addEventListener("click", function(e) {
+        e.preventDefault();
+        chargement.style.display = 'block';
+        if(formInputText.value != ""){
+            fetch(`https://api.lyrics.ovh/v1/silent planet/${formInputText.value}`)
+                .then(parolesChanson => parolesChanson.json()) 
+                .then(dataParoles => { 
+                    let paroles = newLineToBr(dataParoles.lyrics);
+                    chargement.style.display = 'none';
+                    divParoles.innerHTML = `<br><h2> Paroles de: ${formInputText.value} </h2><br> ${paroles}`;
+                    console.log(fetch(`https://api.lyrics.ovh/v1/silent planet/${formInputText.value}`));
+                })
+            .catch(error => {
+              chargement.style.display = 'none';
+            divParoles.innerHTML = `Désolé, les paroles n'ont pu être trouvées. En voici la raison: ${error}`;
+            });
+        }
+    })
+    
+    const newLineToBr = function(str) {
+        return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
+    }
+    

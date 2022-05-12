@@ -275,7 +275,6 @@ h2 {
     width: 400px;
     height: 400px;
     animation: spritesheet2 1s steps(24) infinite;
-    position: fixed;
     
 }
 
@@ -285,7 +284,6 @@ h2 {
     width: 400px;
     height: 400px;
     animation: spritesheet 2s steps(48) infinite;
-    position: fixed;
 }
   
 .scroll-down {
@@ -295,6 +293,10 @@ h2 {
     height: 400px;
     animation: spritesheet 2s steps(48) infinite;
     
+}
+.paroles_qui_inspirent{
+    margin: auto;
+    text-align: center;
 }
 
 @keyframes spritesheet {
